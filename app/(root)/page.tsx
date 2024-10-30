@@ -12,7 +12,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="pt-20">
       <DropdownMenu>
         <DropdownMenuTrigger>Open</DropdownMenuTrigger>
         <DropdownMenuContent>

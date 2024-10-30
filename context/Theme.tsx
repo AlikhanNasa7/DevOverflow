@@ -10,7 +10,6 @@ const themeCtx = createContext({});
 const ThemeProvider = ({ children, ...props }: ThemeProviderProps) => {
   return (
         <NextThemeProvider {...props}>
-            <Navbar/>
             {children}
         </NextThemeProvider>
     );

@@ -51,8 +51,8 @@ const config: Config = {
   			'dark-200': '2px 0px 20px 0px rgba(39, 36, 36, 0.04)'
   		},
   		backgroundImage: {
-  			'auth-dark': "url('/assets/images/auth-dark.png')",
-  			'auth-light': "url('/assets/images/auth-light.png')"
+  			'auth-dark': "url('/images/auth-dark.png')",
+  			'auth-light': "url('/images/auth-light.png')"
   		},
   		screens: {
   			xs: '420px'
@@ -80,6 +80,8 @@ const config: Config = {
   			'accordion-up': 'accordion-up 0.2s ease-out'
   		},
   		borderRadius: {
+			"2": "8px",
+			"1.5": "6px",
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
