@@ -1,10 +1,23 @@
+"use client"
 import React from 'react'
 import SocialAuthForm from '@/components/forms/SocialAuthForm'
+import AuthForm from '@/components/forms/AuthForm';
+import {SignInSchema} from "@/lib/validations";
 
-const page = () => {
+const SignIn = () => {
   return (
-    <div>Sign in</div>
+    <AuthForm
+      formType="SIGN_IN"
+      schema={SignInSchema}
+      defaultValues={{
+        email: "",
+        password: ""
+      }}
+      onSubmit={(data)=>{
+        return Promise.resolve({success: true, data})
+      }}
+    />
   );
 }
 
-export default page
+export default SignIn;

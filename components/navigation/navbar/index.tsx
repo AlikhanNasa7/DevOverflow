@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Theme from "./Theme";
+import MobileNavigation from "./MobileNavigation";
 
 const Navbar = () => {
   return (
@@ -20,11 +21,11 @@ const Navbar = () => {
             </p>
         </Link>
         <div className="relative flex items-center">
-            <input type="text" className="absolute "/>
-            <button className="absolute"></button>
+            Global Search
         </div>
-        <div>
+        <div className="flex-between gap-5">
             <Theme/>
+            <MobileNavigation/>
         </div>
     </nav>
   );
